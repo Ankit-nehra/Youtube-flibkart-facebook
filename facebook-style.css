@@ -1,0 +1,366 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+ 
+.nav-bar{
+    width: 100%;
+    position: sticky;
+    top:0px;
+    background-color: white;
+    z-index: 1;                                     /*------------------------------------------------------------------*/
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+   align-items: center;
+   border-bottom: 1px solid rgb(143, 138, 138);
+}
+
+.left-menu{
+    width:25%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left-menu img{
+    cursor: pointer;
+}
+
+.left-menu .search-box{
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+
+.left-menu .search-box input[type="text"]{
+    padding:5px;
+    width: 100%;
+    font-size: 14px;
+    border:none;
+}
+
+.nav-bar .main-menus{
+    width:50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar .main-menus .menu img{
+    cursor: pointer;
+}
+
+
+.right-side{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+.right-side .r1{
+    cursor: pointer;
+    margin-right: 10px;
+    padding:0px;
+    border-radius: 50%;
+    
+}
+.right-side .profile-photo{
+    cursor: pointer;
+    background-image: url("1.jpg");
+    width: 29px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* --------------------------------- left-aside --------------------- */
+.below-nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.below-nav .left-aside{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100vh;
+    padding: 10px;
+    overflow-y: scroll;
+    
+}
+
+
+
+.below-nav .left-aside a{
+ 
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.below-nav .left-aside a:hover{
+    background-color: rgb(236, 231, 231);
+
+
+}
+
+.below-nav .left-aside a p{
+    font-size: 18px;
+    color: black;
+}
+
+.below-nav .left-aside a img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+
+.below-nav .left-aside a .aside-profile-logo{
+    width: 25px;
+    height:25px;
+    margin-right: 10px;    
+    background: url("1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* ----------------------------- main-mid ---------------------------------- */
+.main-mid{
+
+    width:49%;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-mid .stories{
+    margin-top: 21px;
+    display: flex;
+    justify-content: flex-start;
+   
+
+   
+  
+    
+
+}
+
+.main-mid .stories #create-story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width:4cm;
+    height: 7.5cm;
+    border: 1px solid rgb(175, 170, 170);
+    position: relative;
+    margin-right: 5px;
+}
+.main-mid .stories #create-story #add{
+  
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom:31px;
+    border-radius: 50%;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+.main-mid .stories #create-story #add img{
+    cursor: pointer;
+    width: 35px;
+}
+
+.main-mid .stories #create-story .bg-img{
+    width:4cm;
+    height: 6cm;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url("1.jpg");
+    background-size: cover;
+ 
+
+}
+
+.main-mid .stories #create-story .friend-story{
+    width:4cm;
+    height: 6cm;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url("story.jpg");
+    background-size: cover;
+ 
+}
+
+.main-mid .stories #create-story .about-story{
+    margin-top: 25px;
+}
+
+.main-mid .post-section{
+display: flex;
+flex-direction: column;
+}
+
+.main-mid .post-section .post{
+    width: 100%;
+    border-top: 1px solid rgb(194, 188, 188);
+    border-bottom: 1px solid rgb(194, 188, 188);
+    border-radius: 30px;
+    margin-top:10px;
+}
+
+.main-mid .post-section .post .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 41px;
+    padding: 10px;
+    
+
+}
+
+
+.main-mid .post-section .post .heading .logo-text{
+    display: flex;
+    align-items: center;
+    width: 3cm;
+    justify-content: space-around;
+
+}
+
+.main-mid .post-section .post .heading .logo-text img{
+    cursor: pointer;
+}
+
+.main-mid .post-section .post .heading .logo-text .user-time{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-mid .post-section .post .heading .more-cancel{
+    display: flex;
+    width:2cm;
+    justify-content: space-between;
+
+}
+
+.main-mid .post-section .post .heading .more-cancel img{
+    cursor: pointer;
+}
+
+.main-mid .post-section .post .about-post{
+padding: 10px;
+}
+
+.main-mid .post-section .post .like-cmt-shr{
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+
+}
+.main-mid .post-section .post .like-cmt-shr .like{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 1.5cm;
+    justify-content: space-between;
+    
+}
+
+
+
+.main-mid .post-section .post .like-cmt-shr .comment{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 2.4cm;
+    justify-content: space-between;
+}
+
+.main-mid .post-section .post .like-cmt-shr .share{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 1.7cm;
+    justify-content: space-between;
+}
+/* -------------------------------- right-aside ------------------------------ */
+.below-nav .right-aside{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height:100vh;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.right-aside #contacts{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-aside #contacts p{
+font-size: 24px;
+color:rgb(124, 121, 121);
+font-weight:600px;
+}
+
+.right-aside #contacts #search-more{
+    width:25%;
+display: flex;
+justify-content: space-between;
+
+
+}
+
+.right-aside #contacts #search-more img{
+    cursor: pointer;
+    width:24px;
+
+}
+
+
+
+
+.below-nav .right-aside a{
+ 
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.below-nav .right-aside a:hover{
+    background-color: rgb(236, 231, 231);
+
+
+}
+
+.below-nav .right-aside a p{
+    font-size: 18px;
+    color: black;
+}
+
+.below-nav .right-aside a img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+
+.below-nav .right-aside a .aside-profile-logo{
+    width: 25px;
+    height:25px;
+    margin-right: 10px;    
+    background: url("1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+}
+

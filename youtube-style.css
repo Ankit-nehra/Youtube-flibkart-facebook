@@ -1,0 +1,303 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.youtube{
+    border:1px solid black;
+    width: 100%;
+    height: 100vh;
+    padding:0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-size{
+    width: 11px;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2cm;
+    padding:0px 10px;
+}
+
+
+
+.navbar .navbar-left{
+    
+    width:3.6cm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navbar .navbar-mid{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-mid .search{
+    display: flex;
+    margin-right: 20px;
+}
+
+.navbar .navbar-mid .search input[type="text"]{
+    width:41vw;
+    padding:10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;
+    border: 1px solid rgb(189, 185, 185);
+    font-size: 16px;
+   
+}
+
+.navbar .navbar-mid .search img{
+    border: 1px solid rgb(189, 185, 185);
+    padding: 10px 20px;
+    box-sizing: content-box;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+}
+
+.navbar .navbar-right{
+    display: flex;
+    align-items: center;
+    width:3.6cm;
+    justify-content: space-between;
+}
+
+
+
+.navbar .navbar-right #nav-dropdown #dropdown-list{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    top:49px;
+    border-radius: 5px;
+}
+
+.navbar .navbar-right #nav-dropdown #dropdown-list a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom: 1px solid white;
+
+}
+
+.navbar .navbar-right #nav-dropdown #dropdown-list a:hover{
+background-color: rgb(39, 38, 38);
+}
+
+.navbar .navbar-right #nav-dropdown:hover #dropdown-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar .navbar-right .signin{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:95px;
+    border-radius: 20px;
+    padding:5px;
+}
+
+.navbar .navbar-right .signin:hover{
+    background-color: rgb(178, 225, 243);
+    border-radius: 20px;
+}
+
+.navbar .navbar-right .signin a{
+    color:rgb(0, 123, 172);
+    text-decoration: none;
+}
+
+/* ------------------------------------------ navbar-end -------------------------------------------- */
+
+/* ------------------------------------------ aside-navbar ------------------------------------------ */
+#below-navbar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.aside-navbar{
+    width:20%;
+    height:calc(100vh - 2cm);
+    overflow-y: scroll ;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.aside-navbar .menu{
+    
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.aside-navbar .menu:hover{
+    background-color: rgb(221, 215, 215);
+}
+
+.aside-navbar .menu img{
+    margin-right: 20px;
+}
+
+.aside-navbar .menu p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.aside-navbar .line{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid rgb(223, 207, 207);
+}
+
+.aside-navbar p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aside-navbar .signin{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:95px;
+    border-radius: 20px;
+    padding:5px;
+}
+
+.aside-navbar .signin:hover{
+    background-color: rgb(178, 225, 243);
+    border-radius: 20px;
+}
+
+.aside-navbar .signin a{
+    color:rgb(0, 123, 172);
+    text-decoration: none;
+}
+
+.aside-navbar h3{
+    padding-left: 10px;
+    margin: 5px 0px;
+}
+
+
+
+/* ---------------------------------------------- main-section ------------------------------------- */
+
+.main-section{
+    width:79%;
+    height:calc(100vh - 2cm);
+    overflow-y: scroll;
+    
+}
+
+.main-section .main-sec-navbar{
+    margin: 0px;
+    display: flex;
+    z-index: 1;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    position: sticky;
+    top:0px;
+    background-color: white;
+}
+
+.main-section .main-sec-navbar a:nth-child(1){
+    padding: 5px;
+    color:white;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.main-section .main-sec-navbar a{
+    padding: 5px;
+    color:rgb(44, 42, 42);
+    text-decoration: none;
+    border-radius: 6px;
+    margin-left: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main-section .main-sec-navbar a:hover{
+    background-color: black;
+    color:white;
+}
+
+.main-sec-content{
+    width: 100%;
+    margin-top: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+   
+}
+
+.main-section .main-sec-content .box{
+    width: 8cm;
+    height:7cm;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.main-section .main-sec-content .box .poster{
+    width: 100%;
+    height: 5cm;
+    background-image: url("Hanuman-Chalisa.jpg");
+    background-size:cover;
+    border-radius: 10px;
+}
+
+.main-section .main-sec-content .box .detail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.main-section .main-sec-content .box .detail .who{
+    display: flex;
+    align-items:flex-start;
+
+}
+
+.main-section .main-sec-content .box .detail .who .profile{
+    width:1cm;
+    height:1cm;
+
+    background-image: url("1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.main-section .main-sec-content .box .detail .who .chanel{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section .main-sec-content .box .detail .who .chanel p{
+    color:grey;
+}
